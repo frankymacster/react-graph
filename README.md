@@ -1,3 +1,10 @@
+React Graph project
+
+Objective
+----------------------------------
+create an interface using React.js to draw graphs.
+
+based on:
 Typescript + React + Webpack Boilerplate
 =======================================
 
