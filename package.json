@@ -14,12 +14,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/keokilee/react-typescript-boilerplate.git"
+    "url": "https://github.com/frankymacster/react-graph.git"
   },
   "bugs": {
-    "url": "https://github.com/keokilee/react-typescript-boilerplate/issues"
+    "url": "https://github.com/frankymacster/react-graph/issues"
   },
-  "homepage": "https://github.com/keokilee/react-typescript-boilerplate",
+  "homepage": "https://github.com/frankymacster/react-graph",
   "devDependencies": {
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",

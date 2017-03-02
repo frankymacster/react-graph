@@ -8,6 +8,9 @@ var graph = new graph_1.QGraph();
 var n1 = graph.insertNode({ x: 50, y: 50 });
 var n2 = graph.insertNode({ x: 50, y: 100 });
 graph.insertEdge(n1, n2, '');
+var n3 = graph.insertNode({ x: 100, y: 100 });
+graph.insertEdge(n2, n3, '');
+graph.insertEdge(n1, n3, '');
 class Main extends React.Component {
     render() {
         return (React.createElement(app_1.App, { graph: graph }));

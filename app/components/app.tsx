@@ -10,14 +10,27 @@ interface IGraphProps {
 
 export class App extends React.Component<IGraphProps, {}> {
   public render(): React.ReactElement<{}> {
+    var nodes = this.props.graph.nodes;
+    var edges = this.props.graph.edges;
+
+    window.console.log(edges);
+    const nodeItems = nodes.map((node) =>
+      <Node
+        contents={node.contents}
+      />
+    );
+    const edgeItems = edges.map((edge) =>
+      <Edge
+        origin={edge.origin}
+        destination={edge.destination}
+        contents={''}
+      />
+    );
+
     return (
       <svg>
-        <Edge
-          origin={this.props.graph.nodes[0]}
-          destination={this.props.graph.nodes[1]}
-          contents={''}/>
-        <Node contents={this.props.graph.nodes[0].contents}/>
-        <Node contents={this.props.graph.nodes[1].contents}/>
+        {edgeItems}
+        {nodeItems}
       </svg>
     )
   }
